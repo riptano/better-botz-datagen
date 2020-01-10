@@ -130,3 +130,6 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+
+# Ignore the security bundle if it is put into the project.
+secure-connect-better-botz.zip

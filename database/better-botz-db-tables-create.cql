@@ -1,5 +1,3 @@
--- noinspection SqlNoDataSourceInspectionForFile
-
 CREATE TABLE IF NOT EXISTS betterbotz.customers (
   id uuid,
   username text,
@@ -30,7 +28,7 @@ CREATE TABLE IF NOT EXISTS betterbotz.shipping (
   state text,
   country text,
   code text,
-  PRIMARY KEY (prod_name, customer_name, city, (state, country, code))
+  PRIMARY KEY ((state, country, code), prod_name, customer_name, city)
 );
 
 CREATE TABLE IF NOT EXISTS betterbotz.orders (
@@ -54,5 +52,5 @@ CREATE TABLE IF NOT EXISTS betterbotz.addresses (
   country text,
   code text,
   user_id uuid,
-  PRIMARY KEY (street, city, (state, country), code)
+  PRIMARY KEY ((state, country, code), street, city)
 );
