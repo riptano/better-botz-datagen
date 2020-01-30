@@ -1,9 +1,4 @@
 // This next set of INSERTS adds data to the Better Botz Tables.
-
-INSERT INTO betterbotz.customers (id, username, password, email, created) VALUES (d22e1ef2-77bb-42dc-a1b0-ee5486fcd53b,'numberone','#secretz&*','numberone@someplace.com','2019-01-09 19:15:32.001+0040') IF NOT EXISTS;
-
-SELECT id, username, password, email, created FROM betterbotz.customers WHERE username = 'numberone' AND email = 'numberone@someplace.com';
-
 INSERT INTO betterbotz.products (  id ,  name ,  description,  price,  created ) VALUES (31047029-2175-43ce-9fdd-b3d568b19bb0,'Heavy Lift Arms','Heavy lift arms capable of lifting 1,250lbs of weight per arm. Sold as a set.',4199.99,'2019-01-10 09:48:31.020+0040') IF NOT EXISTS;
 INSERT INTO betterbotz.products (  id ,  name ,  description,  price,  created ) VALUES (31047029-2175-43ce-9fdd-b3d568b19bb1,'Precisions Action Arms','Arms for precision activities in manufacturing or repair. Sold as a set.',12199.99,'2019-01-10 09:28:31.020+0040') IF NOT EXISTS;
 INSERT INTO betterbotz.products (  id ,  name ,  description,  price,  created ) VALUES (31047029-2175-43ce-9fdd-b3d568b19bb2,'Medium Lift Arms','Medium lift arms capable of lifting 850lbs of weight per arm. Sold as a set.',3199.99,'2019-01-10 09:23:31.020+0040') IF NOT EXISTS;
@@ -16,8 +11,6 @@ INSERT INTO betterbotz.products (  id ,  name ,  description,  price,  created )
 
 SELECT id, name, description, price, created FROM betterbotz.products WHERE id = 31047029-2175-43ce-9fdd-b3d568b19bb0 AND name = 'Heavy Lift Arms' AND price = 4199.99 AND created = '2019-01-10 09:48:31.020+0040';
 SELECT id, name, description, price, created FROM betterbotz.products WHERE price > 0 ALLOW FILTERING;
-
-// Getting a list of robot products.
 
 SELECT name, description, price FROM betterbotz.products;
 
