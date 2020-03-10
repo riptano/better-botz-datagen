@@ -17,7 +17,7 @@ package cmd
 
 import (
 	"fmt"
-
+	"github.com/brianvoe/gofakeit/v4"
 	"github.com/spf13/cobra"
 )
 
@@ -33,19 +33,24 @@ This application is a tool to generate the needed files
 to quickly create a Cobra application.`,
 	Run: func(cmd *cobra.Command, args []string) {
 		fmt.Println("orders called")
+
+		//gofakeit.Seed(0)
+
+		//gofakeit.Name() // Markus Moen
+		//gofakeit.Email() // alaynawuckert@kozey.biz
+		//gofakeit.Phone() // (570)245-7485
+		//gofakeit.BS() // front-end
+		//gofakeit.BeerName() // Duvel
+		//gofakeit.Color() // MediumOrchid
+		//gofakeit.Company() // Moen, Pagac and Wuckert
+		//gofakeit.CreditCardNumber() // 4287271570245748
+		//gofakeit.HackerPhrase() // Connecting the array won't do anything, we need to generate the haptic COM driver!
+		//gofakeit.JobTitle() // Director
+		//gofakeit.Password(true, true, true, true, true, 32) // WV10MzLxq2DX79w1omH97_0ga59j8!kj
+		//gofakeit.CurrencyShort() // USD
 	},
 }
 
 func init() {
 	rootCmd.AddCommand(ordersCmd)
-
-	// Here you will define your flags and configuration settings.
-
-	// Cobra supports Persistent Flags which will work for this command
-	// and all subcommands, e.g.:
-	// ordersCmd.PersistentFlags().String("foo", "", "A help for foo")
-
-	// Cobra supports local flags which will only run when this command
-	// is called directly, e.g.:
-	// ordersCmd.Flags().BoolP("toggle", "t", false, "Help message for toggle")
 }
