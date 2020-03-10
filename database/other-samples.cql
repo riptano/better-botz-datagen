@@ -1,4 +1,5 @@
-// This next set of INSERTS adds data to the Better Botz Tables.
+-- This next set of INSERTS adds data to the Better Botz Tables.
+
 INSERT INTO betterbotz.products (  id ,  name ,  description,  price,  created ) VALUES (31047029-2175-43ce-9fdd-b3d568b19bb0,'Heavy Lift Arms','Heavy lift arms capable of lifting 1,250 lbs of weight per arm. Sold as a set.',4199.99,'2019-01-10 09:48:31.020+0040') IF NOT EXISTS;
 INSERT INTO betterbotz.products (  id ,  name ,  description,  price,  created ) VALUES (31047029-2175-43ce-9fdd-b3d568b19bb1,'Precision Action Arms','Arms for precision activities in manufacturing or repair. Sold as a set.',12199.99,'2019-01-10 09:28:31.020+0040') IF NOT EXISTS;
 INSERT INTO betterbotz.products (  id ,  name ,  description,  price,  created ) VALUES (31047029-2175-43ce-9fdd-b3d568b19bb2,'Medium Lift Arms','Medium lift arms capable of lifting 850 lbs of weight per arm. Sold as a set.',3199.99,'2019-01-10 09:23:31.020+0040') IF NOT EXISTS;

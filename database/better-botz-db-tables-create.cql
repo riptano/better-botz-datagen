@@ -1,4 +1,4 @@
-CREATE TABLE IF NOT EXISTS betterbotz.products (
+CREATE TABLE IF NOT EXISTS bb.products (
   id uuid,
   name text,
   description text,
@@ -7,7 +7,7 @@ CREATE TABLE IF NOT EXISTS betterbotz.products (
   PRIMARY KEY (id, name, price, created)
 );
 
-CREATE TABLE IF NOT EXISTS betterbotz.orders (
+CREATE TABLE IF NOT EXISTS bb.orders (
   id uuid,
   address text,
   prod_id uuid,
